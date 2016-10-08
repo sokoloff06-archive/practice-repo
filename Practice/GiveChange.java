@@ -9,7 +9,6 @@ public class GiveChange {
   *   @return number of quarters
   */
   public static int getQuarters(int p) {
-  	//TODO: method definition for getQuarters
     int quarters = p / 25;
     return quarters;
   	
@@ -20,7 +19,6 @@ public class GiveChange {
   *   @return number of dimes
   */
   public static int getDimes(int p, int q) {
-  	//TODO: method definition for getDimes
     int dimes = (p - q * 25) / 10;
     return dimes;
   }
@@ -31,7 +29,6 @@ public class GiveChange {
   *   @return number of nickels
   */
   public static int getNickels(int p, int q, int d) {
-  	//TODO: method definition for getNickels
   	int nickels = (p - q * 25 - d * 10) / 5;
     return nickels;
   }
@@ -43,7 +40,6 @@ public class GiveChange {
   *   @return number of leftover pennies
   */
   public static int getPennies(int p, int q, int d, int n) {
-  	//TODO: method definition for getPennies
   	int pennies = p - q * 25 - d * 10 - n * 5;
     return pennies;
   }

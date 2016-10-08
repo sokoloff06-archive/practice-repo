@@ -1,4 +1,4 @@
-package src.Ex6;
+package Ex6;
 
 public class MealCard {
 	private static int curId = 1;

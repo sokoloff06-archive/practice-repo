@@ -1,5 +1,5 @@
 //TODO Обработать все случаи некорректного ввода
-package Ex6;
+package src.Ex6;
 
 import java.util.Scanner;
 

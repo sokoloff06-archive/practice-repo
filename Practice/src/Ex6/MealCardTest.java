@@ -4,6 +4,7 @@ package Ex6;
 import java.util.Scanner;
 
 public class MealCardTest {
+	MealCard a = new MealCard(0, "Vitaly", "Sokolov");
 	static MealCard[] cards = new MealCard[100];
 	static int cardsCounter = 0;
 
@@ -53,8 +54,7 @@ public class MealCardTest {
 		String balance_str = scan.next();
 		int balance = Integer.parseInt(balance_str);
 		cards[cardsCounter] = new MealCard(balance, firstName, lastName);
-		System.out.println("New MealCard created." + "\nID = " + cards[cardsCounter].getId() + "\nBalance = "
-				+ cards[cardsCounter].getBalance() + "\nName = " + cards[cardsCounter].getName());
+		System.out.println("New MealCard created." + "\nID = " + cards[cardsCounter].getId() + "\nBalance = " + cards[cardsCounter].getBalance() + "\nName = " + cards[cardsCounter].getName());
 	}
 
 	public static int getBalance(int id) {

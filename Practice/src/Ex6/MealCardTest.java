@@ -4,7 +4,6 @@ package Ex6;
 import java.util.Scanner;
 
 public class MealCardTest {
-	MealCard a = new MealCard(0, "Vitaly", "Sokolov");
 	static MealCard[] cards = new MealCard[100];
 	static int cardsCounter = 0;
 

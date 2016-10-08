@@ -19,7 +19,7 @@ public class MealCardTest {
 		System.out.println("2 - Get Balance");
 		System.out.println("3 - Make Purchase");
 		System.out.println("4 - Refill Meal Card");
-		System.out.println("5 - Exit programm");
+		System.out.println("5 - Quit programm");
 		int in = scan.nextInt();
 		switch (in) {
 		case 1:

@@ -12,11 +12,11 @@ public class LeapYear {
 		boolean res = isLeapYear(year);
 		if (res == true)
 		{
-			System.out.println("The year " + year + " is a leap year.");
+			System.out.println("The year " + year + " is a leap year");
 		}
 		else
 		{
-			System.out.println("The year " + year + " is not a leap year.");
+			System.out.println("The year " + year + " is not a leap year");
 		}
 
 	}

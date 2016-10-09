@@ -1,4 +1,4 @@
-
+package src;
 public class CuriousCat {
 
 	public static void main(String[] args)

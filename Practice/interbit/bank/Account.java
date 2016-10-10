@@ -31,7 +31,12 @@ public class Account {
 		this.balance += amount; 
 	}
 	public double withdraw(double amount){
-		this.balance -= (1 + COMMISSION) * amount;
+		if (amount > this.balance){
+			System.out.println("Not enough money to complete!");
+		}
+		else{
+			this.balance -= (1 + COMMISSION) * amount;	
+		}
 		return this.balance;
 	}
 }

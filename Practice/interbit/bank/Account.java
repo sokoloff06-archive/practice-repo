@@ -1,7 +1,7 @@
 package interbit.bank;
 
 public class Account {
-	private String id;
+	private String id; //String for practice goals, surely it should be an int
 	private double balance;
 	private int typeOfAccount;
 	private final int CHECKING_ACCOUNT = 1;

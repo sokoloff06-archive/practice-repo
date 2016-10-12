@@ -1,2 +1,2 @@
 # practice-repo
-Reposiitory for studying purposes
+Repository for studying purposes

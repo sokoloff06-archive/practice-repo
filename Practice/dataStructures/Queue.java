@@ -18,8 +18,11 @@ public class Queue {
 	}
 
 	// -------------------------------------------------------------
-	public void insert(long j) // put item at rear of queue
+	public void insert(long j) throws Exception // put item at rear of queue
 	{
+		if (nItems == maxSize){
+			throw new Exception("Overflow");
+		}
 		if (rear == maxSize - 1) // deal with wrap around
 			rear = -1;
 		queArray[++rear] = j; // increment rear and insert
@@ -67,6 +70,7 @@ class QueueApp {
 		System.out.println("Queue class:");
 		Queue theQueue = new Queue(5); // queue holds 5 items
 
+		try {
 		theQueue.insert(10); // insert 4 items
 		theQueue.insert(20);
 		theQueue.insert(30);
@@ -84,6 +88,10 @@ class QueueApp {
 		theQueue.insert(60); // (wraps around)
 		theQueue.insert(70);
 		theQueue.insert(80);
+		}
+		catch (Exception e){
+			System.out.println(e.getMessage());
+		}
 
 		while (!theQueue.isEmpty()) // remove and display all items
 		{

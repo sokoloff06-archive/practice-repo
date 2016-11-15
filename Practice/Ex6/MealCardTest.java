@@ -1,4 +1,4 @@
-//TODO Обработать все случаи некорректного ввода
+
 package Ex6;
 
 import java.util.Scanner;
